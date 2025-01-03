@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { FaHouse } from 'react-icons/fa6'
 import { FaUserCircle } from 'react-icons/fa'
 import { HiBars3BottomRight } from 'react-icons/hi2'
-import MobileNavbar from './MobileNavbar'
+import MobileNavbar from './mobileNavbar'
 import { CgClose } from 'react-icons/cg'
 import { PiWarehouse } from "react-icons/pi"
 
@@ -43,8 +43,8 @@ const Navbar = () => {
                         </div>
                     */}
                         <PiWarehouse className='text-2xl text-white' />
-                        <h1 className='text-white font-bold text-sm sm:text-base underline'>
-                            HomeHub
+                        <h1 className='text-white font-bold text-sm sm:text-base hover:underline hover:cursor-pointer'>
+                            RentPro
                         </h1>
                     </div>
                 </div>

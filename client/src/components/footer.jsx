@@ -43,7 +43,7 @@ const Footer = () => {
           <div className='flex flex-col'>
             <div href="/" className='flex items-center space-x-2'>
               <PiWarehouse className='text-2xl text-white' />
-              <h1 className='text-white font-bold text-sm sm:text-base'>HomeHub</h1>
+              <h1 className='text-white font-bold text-sm sm:text-base'>RentPro</h1>
             </div>
             <p className='text-gray-400 mt-6 text-sm'>The best place to buy, sell, and rent properties from all over the U.S.</p>
             <div className='flex items-center space-x-4 mt-6'>
