@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { properties } from './data'
-import PropertyCard from './PropertyCard'
+import PropertyCard from './propertyCard'
 import { FaArrowRight } from 'react-icons/fa6'
 
 const Properties = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Searchbox from './Searchbox'
+import Searchbox from './searchbox'
 
 const Hero = () => {
   return (

@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Carousel from 'react-multi-carousel'
-import ReviewCard from './ReviewCard'
+import ReviewCard from './reviewCard'
 import "react-multi-carousel/lib/styles.css"
 import { userReviews } from './data'
 

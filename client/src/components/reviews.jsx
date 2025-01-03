@@ -1,5 +1,5 @@
 import React from 'react'
-import ReviewSlider from './ReviewSlider'
+import ReviewSlider from './reviewSlider'
 
 const Reviews = () => {
   return (
