@@ -1,12 +1,12 @@
 
 import sanFrancisco from "../images/sanfrancisco_townhouse.jpg"
-import boise from "../images/boise_colonialblue.jpg"
-import brooklyn from "../images/boise_colonialblue.jpg"
-import buffalo from "../images/boise_colonialblue.jpg"
-import chicago from "../images/boise_colonialblue.jpg"
+import boise from "../images/Boise_ColonialBlue.jpg"
+import brooklyn from "../images/Boise_ColonialBlue.jpg"
+import buffalo from "../images/Boise_ColonialBlue.jpg"
+import chicago from "../images/Boise_ColonialBlue.jpg"
 import milwaukee from "../images/Milwaukee_BrickHouse.jpg"
-import kansasCity from "../images/boise_colonialblue.jpg"
-import madison from "../images/Madison_colonialblue.jpg"
+import kansasCity from "../images/Boise_ColonialBlue.jpg"
+import madison from "../images/Madison_ColonialBlue.jpg"
 import minneapolis from "../images/Minneapolis_Cottage.jpg"
 import annwu from "../images/annwu.jpg"
 
