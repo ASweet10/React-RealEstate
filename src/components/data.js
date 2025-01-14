@@ -1,140 +1,109 @@
-
-import sanFrancisco from "../images/sanfrancisco_townhouse.jpg"
-import boise from "../images/Boise_ColonialBlue.jpg"
-import brooklyn from "../images/Boise_ColonialBlue.jpg"
-import buffalo from "../images/Boise_ColonialBlue.jpg"
-import chicago from "../images/Boise_ColonialBlue.jpg"
-import milwaukee from "../images/Milwaukee_BrickHouse.jpg"
-import kansasCity from "../images/Boise_ColonialBlue.jpg"
-import madison from "../images/Madison_ColonialBlue.jpg"
-import minneapolis from "../images/Minneapolis_Cottage.jpg"
-import annwu from "../images/annwu.jpg"
+import ranchTan from "../images/ranchTan.jpg"
+import colonial from "../images/colonialBlue.jpg"
+import suburbanHouse2 from "../images/suburbanHouse2.jpg"
+import houseGarage from "../images/houseGarage.jpg"
+import ranch from "../images/ranch.jpg"
+import brickHouse from "../images/brickHouse.jpg"
+import suburbanHouse from "../images/suburbanHouse.jpg"
+import ranchBlue from "../images/ranchBlue.jpg"
+import cottage from "../images/cottage.jpg"
 
 export const properties = [
     {
         id: 1,
-        propertyName: "San Francisco Townhouse",
-        realtor: "Sunshine Realty Trust",
-        address: "28 West Parker, San Francisco, CA",
-        zip: 94108,
-        bedrooms: 2,
-        bathrooms: 1,
-        size: 1500,
+        realtor: "Parker Brothers Realty",
+        address: "28 N Baldwin St, Brown Deer, WI",
+        zip: 55555,
+        bedrooms: 3,
+        bathrooms: 3,
+        size: 2350,
         price: 349750,
         listingActive: true,
-        imageUrl: sanFrancisco
+        imageUrl: ranchTan
     },
     {
         id: 2,
-        propertyName: "Modern Urban Retreat",
-        realtor: "124 Realty",
+        realtor: "Baker & Wakefield",
         address: "28175 Harbor Drive, Duluth, MN",
         zip: 55555,
         bedrooms: 4,
         bathrooms: 3,
-        size: 3500,
-        price: 875500,
+        size: 3000,
+        price: 525500,
         listingActive: false,
-        imageUrl: brooklyn
-
+        imageUrl: suburbanHouse2
     },
     {
         id: 3,
-        propertyName: "Milwaukee Brick House",
         realtor: "New Horizons Realty",
-        address: "53 East Broadway, Milwaukee, WI",
+        address: "53 E Broadway, Milwaukee, WI",
         zip: 55555,
         bedrooms: 2,
         bathrooms: 2,
-        size: 1850,
-        price: 185800,
+        size: 1650,
+        price: 285000,
         listingActive: true,
-        imageUrl: milwaukee
-
+        imageUrl: brickHouse
     },
     {
         id: 4,
-        propertyName: "Minneapolis Cottage",
-        realtor: "Bridge Realty Group",
-        address: "2417 North Booker, Minneapolis, MN",
+        realtor: "The Keller Group",
+        address: "2417 N Booker, Minneapolis, MN",
         zip: 55555,
         bedrooms: 2,
         bathrooms: 2,
-        size: 2200,
+        size: 1900,
         price: 289900,
         listingActive: true,
-        imageUrl: minneapolis
-
+        imageUrl: cottage
     },
     {
         id: 5,
-        propertyName: "Madison Colonial",
-        realtor: "Ace Realty",
-        address: "211 North Sunset, Madison, WI",
+        realtor: "Farmer's Bank",
+        address: "122 S Academy Drive, Madison, WI",
         zip: 55555,
-        bedrooms: 2,
+        bedrooms: 3,
         bathrooms: 2,
-        size: 2400,
-        price: 290900,
+        size: 2200,
+        price: 290500,
         listingActive: true,
-        imageUrl: boise
-
+        imageUrl: colonial
     },
     {
         id: 6,
-        propertyName: "Madison Colonial",
         realtor: "Ace Realty",
-        address: "211 North Sunset, Madison, WI",
+        address: "211 N Sunset, Madison, WI",
         zip: 55555,
         bedrooms: 2,
         bathrooms: 2,
-        size: 2400,
-        price: 290900,
+        size: 1800,
+        price: 265000,
         listingActive: true,
-        imageUrl: boise
-
+        imageUrl: ranch
     },
     {
         id: 7,
-        propertyName: "Madison Colonial",
-        realtor: "Ace Realty",
-        address: "211 North Sunset, Madison, WI",
+        realtor: "Bluefin",
+        address: "72 N Taylor, Oak Park, IL",
         zip: 55555,
-        bedrooms: 2,
+        bedrooms: 3,
         bathrooms: 2,
-        size: 2400,
-        price: 290900,
+        size: 1900,
+        price: 315000,
         listingActive: true,
-        imageUrl: chicago
-
+        imageUrl: ranchBlue
     },
     {
         id: 8,
-        propertyName: "Madison Colonial",
-        realtor: "Ace Realty",
-        address: "211 North Sunset, Madison, WI",
+        realtor: "RE Experts",
+        address: "31 E Maple, Kansas City, MO",
         zip: 55555,
-        bedrooms: 2,
-        bathrooms: 2,
-        size: 2400,
-        price: 290900,
+        bedrooms: 4,
+        bathrooms: 3,
+        size: 2750,
+        price: 314500,
         listingActive: true,
-        imageUrl: kansasCity
-    }
-]
-
-export const cities = [
-    { 
-        id: 1,
-        image: "",
-        cityName: "New York",
-        numberOfProperties: 80
-    },
-    { 
-        id: 2,
-        image: "",
-        cityName: "Chicago",
-        numberOfProperties: 95
+        imageUrl: suburbanHouse
     }
 ]
 
@@ -143,7 +112,7 @@ export const userReviews = [
         id: 1,
         name: "Adam Smith",
         profession: "Real Estate Agent",
-        image: annwu,
+        image: "https://react-realestate1.s3.us-east-2.amazonaws.com/adamsmith.jpg",
         stars: 5,
         review: "I needed to sell a real estate property quickly. RentPro made the process simple and efficient.",
     },
@@ -151,7 +120,7 @@ export const userReviews = [
         id: 2,
         name: "Maria Sanchez",
         profession: "Property Owner",
-        image: annwu,
+        image: "https://react-realestate1.s3.us-east-2.amazonaws.com/mariasanchez.jpg",
         stars: 5,
         review: "My first time using RentPro I found a tenant almost immediately. I will definitely use them again.",
     },
@@ -159,7 +128,7 @@ export const userReviews = [
         id: 3,
         name: "Emily Wilson",
         profession: "Real Estate Agent",
-        image: annwu,
+        image: "https://react-realestate1.s3.us-east-2.amazonaws.com/emilywilson.jpg",
         stars: 4,
         review: "I've referred multiple clients to RentPro and they have all been satisfied so far.",
     },
@@ -167,31 +136,23 @@ export const userReviews = [
         id: 4,
         name: "Ann Wu",
         profession: "Real Estate Agent",
-        image: annwu,
+        image: "https://react-realestate1.s3.us-east-2.amazonaws.com/annwu.jpg",
         stars: 5,
         review: "Usually it takes me weeks to list my property and start to get offers. On RentPro I was getting offers before the end of the week!",
     },
     {
         id: 5,
-        name: "Sarah Porter",
-        profession: "Tenant",
-        image: annwu,
-        stars: 5,
-        review: "I've tried multiple different rental websites and this is my favorite. They clearly care about their customers.",
-    },
-    {
-        id: 6,
         name: "Amy Jackson",
         profession: "Property Owner",
-        image: annwu,
+        image: "https://react-realestate1.s3.us-east-2.amazonaws.com/amyjackson.jpg",
         stars: 4,
         review: "My experience on RentPro has been excellent. I've bought and sold properties with ease. I just wish there were more filter options.",
     },
     {
-        id: 7,
+        id: 6,
         name: "Mark Miller",
         profession: "Tenant",
-        image: annwu,
+        image: "https://react-realestate1.s3.us-east-2.amazonaws.com/markmiller.jpg",
         stars: 5,
         review: "I love RentPro. It makes the apartment hunting process a lot easier.",
     },

@@ -37,13 +37,8 @@ const Navbar = () => {
             <div className='flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[85%] mx-auto'>
                 <div className='flex items-center justify-between gap-8'>
                     <div href="/" className='flex items-center space-x-2 hover:cursor-pointer'>
-                    {/*
-                        <div className='md:w-10 md:h-10 w-7 h-7 rounded-full bg-rose-700 text-white flex items-center justify-center flex-col'>
-                            <FaHouse />
-                        </div>
-                    */}
-                        <PiWarehouse className='text-2xl text-white' />
-                        <h1 className='text-white font-bold text-sm sm:text-base hover:underline hover:cursor-pointer'>
+                        <PiWarehouse className='text-3xl text-white' />
+                        <h1 className='text-white font-bold text-lg hover:underline hover:cursor-pointer'>
                             RentPro
                         </h1>
                     </div>
@@ -64,11 +59,11 @@ const Navbar = () => {
                 <div className='flex items-center space-x-4'>
                     <div className='flex items-center cursor-pointer text-white space-x-2 hover:text-red-400 transition-all duration-200'>
                         <FaUserCircle className='w-5 h-5' />
-                        <p className='font-bold text-xs sm:text-base'>Login / Register</p>
+                        <p className='font-bold text-base'>Login / Register</p>
                     </div>
                 </div>
 
-                <HiBars3BottomRight className='text-white sm:w-8 sm:h-8 w-6 h-6 hover:cursor-pointer lg:hidden' 
+                <HiBars3BottomRight className='text-white w-8 h-8 hover:cursor-pointer lg:hidden' 
                     onClick={() => setMobileNavOpen(!mobileNavOpen)}
                 />
             </div>

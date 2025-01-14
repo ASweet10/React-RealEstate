@@ -25,14 +25,14 @@ const Footer = () => {
     { id: 5, link: "Sitemap"},
     { id: 6, link: "Accessibility"},
   ]
-  const footerNeighborhoods = [
-    { id: 1, link: "Brooklyn"},
-    { id: 2, link: "Los Angeles"},
+  const footerCities = [
+    { id: 1, link: "Madison"},
+    { id: 2, link: "Milwaukee"},
     { id: 3, link: "Chicago"},
-    { id: 4, link: "Milwaukee"},
-    { id: 5, link: "Minneapoolis"},
-    { id: 6, link: "Dallas"},
-    { id: 7, link: "Columbus"},
+    { id: 4, link: "Minneapolis"},
+    { id: 5, link: "Indianapolis"},
+    { id: 6, link: "Columbus"},
+    { id: 7, link: "Kansas City"},
   ]
 
   return (
@@ -42,10 +42,10 @@ const Footer = () => {
         <div className='flex flex-col md:flex-row gap-8 md:gap-48'>
           <div className='flex flex-col'>
             <div href="/" className='flex items-center space-x-2'>
-              <PiWarehouse className='text-2xl text-white' />
-              <h1 className='text-white font-bold text-sm sm:text-base'>RentPro</h1>
+              <PiWarehouse className='text-3xl text-white' />
+              <h1 className='text-white font-bold text-lg'>RentPro</h1>
             </div>
-            <p className='text-gray-400 mt-6 text-sm'>The best place to buy, sell, and rent properties from all over the U.S.</p>
+            <p className='text-gray-400 mt-4 text-sm'>The best place to buy, sell, and rent properties in the Midwest</p>
             <div className='flex items-center space-x-4 mt-6'>
               { footerSocials.map((social) => {
                 return (
@@ -57,8 +57,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className=''>
-            <h1 className='text-lg text-white font-bold mb-6'>Popular Shortcuts</h1>
+          <div className='text-nowrap'>
+            <h1 className='text-xl text-white font-bold mb-6'>Popular Shortcuts</h1>
             { footerRenterLinks.map((link) => {
               return (
                 <p key={link.id} className='text-white hover:text-yellow-500 hover:underline cursor-pointer mb-1'>{link.link}</p>
@@ -66,17 +66,17 @@ const Footer = () => {
             })}
           </div>
 
-          <div className=''>
-            <h1 className='text-lg text-white font-bold mb-6'>Neighborhoods</h1>
-            { footerNeighborhoods.map((link) => {
+          <div className='text-nowrap'>
+            <h1 className='text-xl text-white font-bold mb-6'>Cities</h1>
+            { footerCities.map((link) => {
               return (
                 <p key={link.id} className='text-white hover:text-yellow-500 hover:underline cursor-pointer mb-1'>{link.link}</p>
               )
             })}
           </div>
 
-          <div className=''>
-            <h1 className='text-lg text-white font-bold mb-6'>About Us</h1>
+          <div className='text-nowrap'>
+            <h1 className='text-xl text-white font-bold mb-6'>About Us</h1>
             { footerAboutLinks.map((link) => {
               return (
                 <p key={link.id} className='text-white hover:text-yellow-500 hover:underline cursor-pointer mb-1'>{link.link}</p>
