@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState} from 'react'
 import Carousel from 'react-multi-carousel'
 import ReviewCard from './reviewCard'
 import "react-multi-carousel/lib/styles.css"
@@ -24,6 +24,12 @@ const ReviewSlider = () => {
       slidesToSlide: 1
     }
   }
+
+  useEffect(() => {
+    const res = fetch("http://localhost:8081/reviews")
+    res = res.json()
+    console.log(res)
+  })
   
   return (
     <Carousel
