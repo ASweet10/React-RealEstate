@@ -17,11 +17,11 @@ const MobileNavbar = () => {
       <div className='transform transition-all duration-500 delay-200 fixed flex justify-center flex-col h-full w-[80%] sm:w-[60%] bg-red-800 text-white space-y-6 z-[10000]'>
         { navLinks.map((link) => {
           return (
-            <div key={link.id} href={link.url}>
+            <a key={link.id} href={link.url}>
               <p className='text-[20px] ml-12 pb-1 w-fit underline sm:text-[30px] text-white hover:text-yellow-300'>
                   {link.title}
               </p>
-            </div>
+            </a>
           )
         })}
         

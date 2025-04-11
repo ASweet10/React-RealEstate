@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
     return res.json("Hello im the backend")
 })
 
-app.get('/reviews', () => {
+app.get('/reviews', (req, res) => {
     const reviews = "SELECT * FROM reviews"
     db.query(reviews, (err, data) => {
         if (err) return res.json(err)
@@ -27,4 +27,8 @@ app.get('/reviews', () => {
 db.connect(function(err) {
     if (err) throw err;
     console.log("Connected!")
+})
+
+app.listen(8081, () => {
+    console.log("listening on 8081")
 })

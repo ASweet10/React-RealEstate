@@ -7,6 +7,8 @@ import { userReviews } from './data'
 
 const ReviewSlider = () => {
 
+  const [ reviewData, setReviewData ] = useState([])
+
   const responsiveCarousel = {
     desktop: {
       breakpoint: { max: 3000, min: 1324 },
@@ -26,9 +28,10 @@ const ReviewSlider = () => {
   }
 
   useEffect(() => {
-    const res = fetch("http://localhost:8081/reviews")
-    res = res.json()
-    console.log(res)
+    fetch("http://localhost:8081/reviews")
+    .then(res => res.json())
+    .then(data => setReviewData(data))
+    .catch(err => console.log(err))
   })
   
   return (
@@ -39,11 +42,9 @@ const ReviewSlider = () => {
       infinite
       responsive={responsiveCarousel}
     >
-      { userReviews.map((review) => {
+      { reviewData.map((review) => {
         return (
-          <div key={review.id}>
-            <ReviewCard review={review}/>
-          </div>
+          <ReviewCard review={review} key={review.id}/>
         )
       })}
     </Carousel>

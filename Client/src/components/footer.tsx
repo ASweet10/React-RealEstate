@@ -25,14 +25,13 @@ const Footer = () => {
     { id: 5, link: "Sitemap"},
     { id: 6, link: "Accessibility"},
   ]
-  const footerCities = [
-    { id: 1, link: "Madison"},
-    { id: 2, link: "Milwaukee"},
-    { id: 3, link: "Chicago"},
-    { id: 4, link: "Minneapolis"},
-    { id: 5, link: "Indianapolis"},
-    { id: 6, link: "Columbus"},
-    { id: 7, link: "Kansas City"},
+  const footerNeighborhoods = [
+    { id: 1, link: "Naperville"},
+    { id: 2, link: "Oak Brook"},
+    { id: 3, link: "Glen Ellyn"},
+    { id: 4, link: "Hinsdale"},
+    { id: 5, link: "Wheaton"},
+    { id: 6, link: "Elmhurst"},
   ]
 
   return (
@@ -41,11 +40,11 @@ const Footer = () => {
       border-b-2 border-white border-opacity-20'>
         <div className='flex flex-col md:flex-row gap-8 md:gap-48'>
           <div className='flex flex-col'>
-            <div href="/" className='flex items-center space-x-2'>
+            <a href="/" className='flex items-center space-x-2'>
               <PiWarehouse className='text-3xl text-white' />
               <h1 className='text-white font-bold text-lg'>RentPro</h1>
-            </div>
-            <p className='text-gray-400 mt-4 text-sm'>The best place to buy, sell, and rent properties in the Midwest</p>
+            </a>
+            <p className='text-gray-400 mt-4 text-sm'>The best place to buy, sell, and rent properties in Illinois</p>
             <div className='flex items-center space-x-4 mt-6'>
               { footerSocials.map((social) => {
                 return (
@@ -67,8 +66,8 @@ const Footer = () => {
           </div>
 
           <div className='text-nowrap'>
-            <h1 className='text-xl text-white font-bold mb-6'>Cities</h1>
-            { footerCities.map((link) => {
+            <h1 className='text-xl text-white font-bold mb-6'>Neighborhoods</h1>
+            { footerNeighborhoods.map((link) => {
               return (
                 <p key={link.id} className='text-white hover:text-yellow-500 hover:underline cursor-pointer mb-1'>{link.link}</p>
               )
@@ -76,7 +75,7 @@ const Footer = () => {
           </div>
 
           <div className='text-nowrap'>
-            <h1 className='text-xl text-white font-bold mb-6'>About Us</h1>
+            <h1 className='text-xl text-white font-bold mb-6'>Helpful Links</h1>
             { footerAboutLinks.map((link) => {
               return (
                 <p key={link.id} className='text-white hover:text-yellow-500 hover:underline cursor-pointer mb-1'>{link.link}</p>

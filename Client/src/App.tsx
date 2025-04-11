@@ -6,6 +6,7 @@ import Hero from './components/hero'
 import Properties from './components/properties'
 import Footer from './components/footer'
 import Reviews from './components/reviews'
+import MapBanner from './components/mapBanner'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Hero />
       <Properties />
+      <MapBanner />
       <Reviews />
       <Footer />
     </>

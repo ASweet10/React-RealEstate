@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, ReactHTMLElement } from 'react'
 import { FaRegHeart, FaHeart } from 'react-icons/fa6'
 import { BsHeart, BsHeartFill } from "react-icons/bs"
 
-const PropertyCard = (p) => {
-
+const PropertyCard = (p:any) => {
     const [ favorite, setFavorite ] = useState(false)
 
     function handleHeartClick() {

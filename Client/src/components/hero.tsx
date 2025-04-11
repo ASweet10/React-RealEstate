@@ -12,7 +12,7 @@ const Hero = () => {
                 The best way to
             </h1>
             <h1 className='text-white font-semibold text-3xl md:text-6xl mt-3'>
-                Find your Dream Home
+                Find Your Dream Home
             </h1>
             <p className='mt-4 text-center text-base md:text-lg text-gray-200'>
                 Search from more than 300,000 houses, apartments, and condos.

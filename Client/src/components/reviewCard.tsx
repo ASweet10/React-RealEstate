@@ -12,7 +12,7 @@ const ReviewCard = ({review}) => {
         <div className='w-full h-[1.2px] bg-gray-600 opacity-10 my-4'></div>
         <div className='flex items-center gap-4'>
             <img src={review.image} alt={review.name} width={45} height={45} className="rounded-full object-cover max-w-full h-auto" />
-            <div>
+            <div> 
                 <h1 className='font-bold text-gray-800'>{review.name}</h1>
                 <p className='text-sm text-gray-500'>{review.profession}</p>
             </div>
