@@ -1,4 +1,3 @@
-import React from 'react'
 import { PiWarehouse } from 'react-icons/pi'
 import { FaFacebookF, FaXTwitter, FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa6'
 

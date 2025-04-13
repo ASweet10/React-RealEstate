@@ -1,4 +1,3 @@
-import React from 'react'
 import Searchbox from './searchbox'
 
 const Hero = () => {

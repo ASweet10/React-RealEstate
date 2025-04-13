@@ -1,13 +1,23 @@
-'use client'
-import React, { useEffect, useState} from 'react'
+//'use client' needed for useEffect data fetching
+import { userReviews as reviews } from './data'
 import Carousel from 'react-multi-carousel'
 import ReviewCard from './reviewCard'
 import "react-multi-carousel/lib/styles.css"
-import { userReviews } from './data'
 
-const ReviewSlider = () => {
+interface Review {
+  id: number;
+  name: string;
+  profession: string;
+  image: string;
+  stars: number;
+  review: string;
+}
 
-  const [ reviewData, setReviewData ] = useState([])
+interface ReviewProps {
+  reviews: Review[];
+}
+
+const ReviewSlider: React.FC<ReviewProps> = ({ reviews: Review }) => {
 
   const responsiveCarousel = {
     desktop: {
@@ -27,12 +37,16 @@ const ReviewSlider = () => {
     }
   }
 
+  /*     Local MySQL data fetching
+  //const [ reviewData, setReviewData ] = useState<Review[]>([])
   useEffect(() => {
+    
     fetch("http://localhost:8081/reviews")
     .then(res => res.json())
     .then(data => setReviewData(data))
     .catch(err => console.log(err))
   })
+  */
   
   return (
     <Carousel
@@ -42,11 +56,17 @@ const ReviewSlider = () => {
       infinite
       responsive={responsiveCarousel}
     >
+      {/*
       { reviewData.map((review) => {
         return (
           <ReviewCard review={review} key={review.id}/>
         )
       })}
+      */}
+
+      { reviews.map((r) => (
+        <ReviewCard review={r} />
+      ))}
     </Carousel>
   )
 }

@@ -1,12 +1,12 @@
-import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { properties } from './data'
 
 const MapBanner = () => {
 
     return (
-        <div className='mx-8 md:mx-52 my-8 md:my-24'>
+        <div className='mx-6 md:mx-52 my-8 md:my-24'>
             <MapContainer center={[41.9, 272]} zoom={11} scrollWheelZoom={true} id="map" zoomControl={false}
-                style={{ height: '550px', width: '100%' }}
+                style={{ height: '600px', width: '100%' }}
             >
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

@@ -1,9 +1,7 @@
 "use client"
-import React, { useState, useEffect } from 'react'
-import { FaHouse } from 'react-icons/fa6'
+import { useState, useEffect } from 'react'
 import { FaUserCircle } from 'react-icons/fa'
 import { HiBars3BottomRight } from 'react-icons/hi2'
-import MobileNavbar from './mobileNavbar'
 import { CgClose } from 'react-icons/cg'
 import { PiWarehouse } from "react-icons/pi"
 

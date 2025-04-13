@@ -1,4 +1,3 @@
-import React from 'react'
 import ReviewSlider from './reviewSlider'
 
 const Reviews = () => {
