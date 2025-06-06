@@ -1,8 +1,4 @@
-# RentPro
-Real estate website
-
-## Features
-- Leaflet.js map
+# RentPro real estate
 
 ## Tech
 - React
@@ -11,7 +7,7 @@ Real estate website
 - TailwindCSS
 - Express/Node.js
 - MySQL
-- Leaflet.js
+- Leaflet.js map
 
 ## Demo
 [RentPro](https://react-real-estate-tau.vercel.app)
