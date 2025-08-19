@@ -1,6 +1,4 @@
 # RentPro real estate
-
-## Tech
 - React
 - Vite
 - TypeScript
